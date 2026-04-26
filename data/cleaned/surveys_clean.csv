@@ -1,0 +1,11 @@
+survey_id,customer_id,case_id,survey_date,csat_score,nps_group,sentiment_label,feedback_text,response_channel,responded_flag
+S001,1001,C001,2024-04-02,4,Passive,Positive,Good service,Email,1
+S002,1002,C002,2024-04-03,5,Promoter,Positive,Excellent,Email,1
+S003,1003,C003,2024-04-04,2,Detractor,Negative,Too slow,nan,0
+S004,1004,C004,2024-04-05,3,Passive,Neutral,Average,SMS,1
+S005,1005,C005,2024-04-06,1,Detractor,Negative,Unhelpful,Email,1
+S006,1006,C006,2024-04-07,5,Promoter,Positive,Fast fix,nan,0
+S007,1007,C007,2024-04-08,4,Passive,Positive,OK,Email,1
+S008,1008,C008,2024-04-09,5,Promoter,Positive,Great agent,SMS,1
+S009,1009,C009,2024-04-10,3,Passive,Neutral,Standard,nan,0
+S010,1010,C010,2024-04-11,2,Detractor,Negative,Billing wrong,Email,1

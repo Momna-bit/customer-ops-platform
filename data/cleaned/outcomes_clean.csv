@@ -1,0 +1,11 @@
+outcome_id,case_id,customer_id,resolved_flag,resolution_time_hours,repeat_contact_30d_flag,refund_flag,churn_risk_flag,sla_breach_flag,final_status
+O001,C001,1001,1,5.5,0,0,0,0,Resolved
+O002,C002,1002,1,5.0,0,0,0,0,Resolved
+O003,C003,1003,1,20.0,1,0,1,1,Resolved
+O004,C004,1004,1,4.0,0,0,0,0,Resolved
+O005,C005,1005,0,0.0,0,0,1,0,Open
+O006,C006,1006,1,2.5,0,0,0,0,Resolved
+O007,C007,1007,1,4.5,0,0,0,0,Resolved
+O008,C008,1008,1,4.75,0,0,0,0,Resolved
+O009,C009,1009,1,2.0,0,0,0,0,Resolved
+O010,C010,1010,0,0.0,1,1,1,0,Open

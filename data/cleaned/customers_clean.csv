@@ -1,0 +1,11 @@
+customer_id,customer_name,age_group,gender,city,province,segment,signup_date,contract_type,tenure_months
+1001,Alice Johnson,25-34,F,Toronto,ON,Small Business,2024-01-15,Standard,14
+1002,Bob Smith,45-54,M,Vancouver,BC,Enterprise,2023-06-20,Enterprise,21
+1003,Carol Lee,18-24,F,Montreal,QC,Small Business,2024-03-10,Standard,2
+1004,David Chen,35-44,M,Calgary,AB,Enterprise,2023-09-05,Enterprise,18
+1005,Eva Rodriguez,55+,F,Ottawa,ON,Small Business,2024-02-28,Standard,5
+1006,Frank Wilson,25-34,M,Edmonton,AB,Enterprise,2023-11-12,Enterprise,10
+1007,Grace Kim,35-44,F,Winnipeg,MB,Small Business,2024-04-01,Standard,1
+1008,Harry Patel,45-54,M,Halifax,NS,Enterprise,2023-07-18,Enterprise,19
+1009,Ivy Nguyen,18-24,F,Regina,SK,Small Business,2024-01-22,Standard,12
+1010,Jack Thompson,55+,M,Victoria,BC,Enterprise,2023-10-08,Enterprise,11

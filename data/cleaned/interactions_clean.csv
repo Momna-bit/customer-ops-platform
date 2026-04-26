@@ -1,0 +1,11 @@
+interaction_id,customer_id,case_id,interaction_date,channel,issue_type,issue_subtype,priority,agent_id,interaction_status
+I001,1001,C001,2024-04-01,Phone,Billing,Billing Error,High,A01,Resolved
+I002,1002,C002,2024-04-02,Email,Technical,Login Issue,Medium,A02,Resolved
+I003,1003,C003,2024-04-03,Chat,Service,Appointment,Low,A03,Resolved
+I004,1004,C004,2024-04-04,Phone,Billing,Overcharge,High,A01,Resolved
+I005,1005,C005,2024-04-05,Email,Technical,Password Reset,Low,A02,Open
+I006,1006,C006,2024-04-06,Chat,Service,Delay,Medium,A03,Resolved
+I007,1007,C007,2024-04-07,Phone,Billing,Payment Failed,High,A01,Resolved
+I008,1008,C008,2024-04-08,Email,Technical,Software Bug,Critical,A02,Resolved
+I009,1009,C009,2024-04-09,Chat,Service,Cancellation,Medium,A03,Resolved
+I010,1010,C010,2024-04-10,Phone,Billing,Invoice Error,High,A01,Open
