@@ -147,4 +147,4 @@ The Power BI dashboard connects directly to `CUSTOMER_OPS_DB.MART.MART_CASE_SUMM
 ## Author
 
 Momna Ali  
-[LinkedIn](https://linkedin.com/in/momnaali) | [GitHub](https://github.com/momnaali)
+[LinkedIn](https://www.linkedin.com/in/momna-ali) | [GitHub](https://github.com/Momna-bit)
