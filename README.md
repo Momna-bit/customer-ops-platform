@@ -26,7 +26,7 @@ AWS S3 (customer-ops-raw-data)       Azure Blob Storage (customeropsstore)
 | Layer | Technology |
 |-------|-----------|
 | Cloud Storage | AWS S3, Azure Blob Storage |
-| Data Warehouse | Snowflake (X-Small warehouse) |
+| Data Warehouse | Snowflake |
 | BI & Visualization | Power BI Desktop |
 | Languages | SQL, Python |
 | Data Format | CSV |
@@ -45,11 +45,11 @@ customer-ops-platform/
 │       ├── service_events_clean.csv
 │       └── surveys_clean.csv
 ├── snowflake/
-│   ├── 01_setup.sql          -- Warehouse, database, schemas
-│   ├── 02_raw_tables.sql     -- 5 raw table definitions
-│   ├── 03_stages.sql         -- Internal, Azure, and AWS stages
-│   ├── 04_copy_into.sql      -- Load CSVs into RAW tables
-│   └── 05_mart_view.sql      -- MART_CASE_SUMMARY join view
+│   ├── 01_setup.sql
+│   ├── 02_raw_tables.sql
+│   ├── 03_stages.sql
+│   ├── 04_copy_into.sql
+│   └── 05_mart_view.sql
 ├── powerbi/
 │   └── customer_ops_dashboard.pbix
 └── README.md
@@ -95,45 +95,6 @@ The Power BI dashboard connects directly to `CUSTOMER_OPS_DB.MART.MART_CASE_SUMM
 
 ---
 
-## Setup Instructions
-
-### Prerequisites
-- Snowflake account (free trial at snowflake.com)
-- AWS account (free tier at aws.amazon.com)
-- Azure account (free trial at portal.azure.com)
-- Power BI Desktop
-
-### Step 1 — Snowflake Setup
-```sql
--- Run in order:
--- 01_setup.sql    → creates warehouse, database, schemas
--- 02_raw_tables.sql → creates 5 raw tables
--- 03_stages.sql   → creates internal, Azure, AWS stages
--- 04_copy_into.sql → loads data into raw tables
--- 05_mart_view.sql → creates reporting mart view
-```
-
-### Step 2 — AWS S3
-1. Create S3 bucket: `customer-ops-raw-data`
-2. Upload all 5 CSV files
-3. Create IAM user `snowflake-s3-user` with `AmazonS3FullAccess`
-4. Generate access keys and update `03_stages.sql`
-
-### Step 3 — Azure Blob Storage
-1. Create Storage Account: `customeropsstore`
-2. Create container: `raw-data`
-3. Upload all 5 CSV files
-4. Generate SAS token and update `03_stages.sql`
-
-### Step 4 — Power BI
-1. Open Power BI Desktop
-2. Get Data → Snowflake
-3. Server: `<account>.snowflakecomputing.com`
-4. Warehouse: `CUSTOMER_OPS_WH`
-5. Load `CUSTOMER_OPS_DB.MART.MART_CASE_SUMMARY`
-
----
-
 ## Key Learnings
 
 - Designed a **three-layer Snowflake architecture** (RAW → TRANSFORM → MART)
@@ -146,5 +107,5 @@ The Power BI dashboard connects directly to `CUSTOMER_OPS_DB.MART.MART_CASE_SUMM
 
 ## Author
 
-Momna Ali  
+Momna Ali
 [LinkedIn](https://www.linkedin.com/in/momna-ali) | [GitHub](https://github.com/Momna-bit)
